@@ -66,7 +66,7 @@ public class MainPage extends AppCompatActivity {
     public void changeView(View v){
         ImageButton imageButton = (ImageButton)v;
         ListView itemsList = (ListView)findViewById(R.id.shopItemsList);
-        GridView itemsGrid = (GridView) findViewById(R.id.shopItemsGrid);
+        GridView itemsGrid = (GridView) findViewById(R.id.shopItemsGrid);//Create GridView
         if(itemsGrid.getVisibility()==View.VISIBLE) {
             itemsGrid.setVisibility(View.GONE);
             itemsList.setVisibility(View.VISIBLE);
